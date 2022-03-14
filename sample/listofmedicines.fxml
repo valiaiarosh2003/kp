@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="445.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Listofmedicines">
+    <children>
+        <TableView fx:id="medicineTable" layoutY="-3.0" prefHeight="361.0" prefWidth="601.0">
+            <columns>
+                <TableColumn fx:id="nameCol" minWidth="0.0" prefWidth="147.0" text="Наименование" />
+                <TableColumn fx:id="lifeCol" minWidth="3.0" prefWidth="109.0" text="Срок годности" />
+                <TableColumn fx:id="countCol" prefWidth="131.0" text="Кол-во лекарства" />
+                <TableColumn fx:id="descCol" prefWidth="213.0" text="Примечание" />
+            </columns>
+        </TableView>
+        <Button fx:id="delbtn" layoutX="14.0" layoutY="367.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="89.0" text="Удалить" />
+        <Button fx:id="addbtn" layoutX="508.0" layoutY="367.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="79.0" text="Изменить или Добавить" textAlignment="CENTER" wrapText="true" />
+      <TextField fx:id="medName" layoutX="121.0" layoutY="367.0" promptText="Наименование" />
+      <TextField fx:id="medLife" layoutX="121.0" layoutY="406.0" promptText="Срок годности" />
+      <TextField fx:id="medCount" layoutX="343.0" layoutY="367.0" promptText="Кол-во лекарства" />
+      <TextField fx:id="medDescription" layoutX="343.0" layoutY="406.0" promptText="Примечание" />
+    </children>
+</AnchorPane>
